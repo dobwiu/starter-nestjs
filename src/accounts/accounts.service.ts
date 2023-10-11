@@ -4,8 +4,7 @@ import { Injectable } from '@nestjs/common';
 export class AccountsService {
   private readonly accounts = [
     {
-      id: '924918E9',
-      companyId: '04E4B7FC',
+      id: 9249189,
       marketPlace: 'MLB',
       nickName: 'Store D',
       externalUserId: 112233,
@@ -21,8 +20,7 @@ export class AccountsService {
       aliquota: 6.75,
     },
     {
-      id: '90CD2B28',
-      companyId: '3F234AF1',
+      id: 90002328,
       marketPlace: 'MLB',
       nickName: 'Store 3D',
       externalUserId: 333333,
@@ -43,7 +41,7 @@ export class AccountsService {
     return this.accounts;
   }
 
-  findOne(companyId: string) {
-    return this.accounts.find((account) => account.companyId === companyId);
+  findOne(accountId: number) {
+    return this.accounts.find((account) => account.id === accountId);
   }
 }

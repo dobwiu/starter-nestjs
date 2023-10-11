@@ -8,7 +8,7 @@ export class UsersService {
   private readonly users = [
     {
       id: '04E4B7FC',
-      companyId: '04E4B7FC',
+      accountId: 9249189,
       fullName: 'User N',
       email: 'n@test.org',
       password: '1234',
@@ -20,7 +20,7 @@ export class UsersService {
     },
     {
       id: 'F7F31F21',
-      companyId: '3F234AF1',
+      accountId: 90002328,
       fullName: 'User A',
       email: 'a@test.org',
       password: '1111',
@@ -32,7 +32,7 @@ export class UsersService {
     },
     {
       id: 'C581B49E',
-      companyId: '3F234AF1',
+      accountId: 90002328,
       fullName: 'User I',
       email: 'I@test.org',
       password: '1234',
