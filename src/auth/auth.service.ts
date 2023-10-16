@@ -16,10 +16,14 @@ export class AuthService {
     }
     const payload = { sub: user.id, accountId: user.accountId };
     return {
-      userId: user.id,
-      username: user.fullName,
-      accountId: user.accountId,
-      access_token: await this.jwtService.signAsync(payload),
+      statusCode: 200,
+      message: 'Authorized',
+      data: {
+        userId: user.id,
+        username: user.fullName,
+        accountId: user.accountId,
+        access_token: await this.jwtService.signAsync(payload),
+      },
     };
   }
 }
